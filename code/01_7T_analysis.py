@@ -62,6 +62,5 @@ for i, (ax, col) in enumerate(zip(axes, slew_cols)):
 axes[0].set_ylabel("ΔTemperature (°C)", fontsize=16)
 
 plt.tight_layout()
-plt.savefig(
-    root / "figures" / "figure_3_7t_heating_results.svg", dpi=300, bbox_inches="tight"
-)
+plt.savefig(root / "figures" / "figure_03.svg", dpi=300, bbox_inches="tight")
+plt.savefig(root / "figures" / "figure_03.png", dpi=300, bbox_inches="tight")
