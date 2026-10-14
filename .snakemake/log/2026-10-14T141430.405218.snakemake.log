@@ -1,0 +1,54 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-10-14 14:14:30
+  Workflow ID: e927ded5-2a82-4fc3-ab53-e42988aba7b8
+  Platform: Windows-10-10.0.26200-SP0
+  Host: UOB232709
+  User: ingrambz
+  Snakemake version: 9.27.0
+  Python version: 3.11.13 (main, Sep 18 2025, 19:43:06) [MSC v.1944 64 bit (AMD64)]
+  Command: C:\Users\ingrambz\AppData\Local\uv\cache\archive-v0\mNIe3NwZOf2ng61ag023Y\Scripts\snakemake --cores 1
+  Snakefile: C:\Users\ingrambz\Documents\Ingram2026_EEGfMRIGradientHeating\Snakefile
+  Base directory: C:\Users\ingrambz\Documents\Ingram2026_EEGfMRIGradientHeating
+  Run directory: C:\Users\ingrambz\Documents\Ingram2026_EEGfMRIGradientHeating
+  Working directory: C:\Users\ingrambz\Documents\Ingram2026_EEGfMRIGradientHeating
+  Config file(s): []
+  Config MD5: 99914b932bd37a50b983c5e7c90ae93b
+
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count
+-----------  -------
+analysis_7T        1
+all                1
+total              2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Oct 14 14:14:31 2026]
+localrule analysis_7T:
+    input: code/01_7T_analysis.py, data/7T_temperature_recordings/7T_heating_slew_rates.csv
+    output: figures/figure_03.svg, figures/figure_03.png
+    jobid: 1
+    reason: Missing output files: figures/figure_03.png, figures/figure_03.svg
+    resources: tmpdir=C:\Users\ingrambz\AppData\Local\Temp
+[Wed Oct 14 14:14:36 2026]
+Finished jobid: 1 (Rule: analysis_7T)
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Oct 14 14:14:36 2026]
+localrule all:
+    input: figures/figure_03.svg, figures/figure_03.png, figures/figure_04.svg, figures/figure_04.png, figures/figure_05.svg, figures/figure_05.png, figures/figure_06.svg, figures/figure_06.png, figures/figure_07.svg, figures/figure_07.png, figures/figure_08.svg, figures/figure_08.png, results/figure_04_metrics.csv, results/figure_05_metrics.csv, results/figure_06_metrics.csv, results/figure_07_metrics.csv, results/figure_08_metrics.csv
+    jobid: 0
+    reason: Input files updated by another job: figures/figure_03.png, figures/figure_03.svg
+    resources: tmpdir=C:\Users\ingrambz\AppData\Local\Temp
+[Wed Oct 14 14:14:36 2026]
+Finished jobid: 0 (Rule: all)
+2 of 2 steps (100%) done
+Complete log(s): C:\Users\ingrambz\Documents\Ingram2026_EEGfMRIGradientHeating\.snakemake\log\2026-10-14T141430.405218.snakemake.log
+Elapsed time: 0:00:06.009634

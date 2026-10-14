@@ -1,0 +1,67 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-10-14 14:15:11
+  Workflow ID: 25fa5a87-9928-4b11-a0be-2137ec7bfc81
+  Platform: Windows-10-10.0.26200-SP0
+  Host: UOB232709
+  User: ingrambz
+  Snakemake version: 9.27.0
+  Python version: 3.11.13 (main, Sep 18 2025, 19:43:06) [MSC v.1944 64 bit (AMD64)]
+  Command: C:\Users\ingrambz\AppData\Local\uv\cache\archive-v0\mNIe3NwZOf2ng61ag023Y\Scripts\snakemake --cores 1
+  Snakefile: C:\Users\ingrambz\Documents\Ingram2026_EEGfMRIGradientHeating\Snakefile
+  Base directory: C:\Users\ingrambz\Documents\Ingram2026_EEGfMRIGradientHeating
+  Run directory: C:\Users\ingrambz\Documents\Ingram2026_EEGfMRIGradientHeating
+  Working directory: C:\Users\ingrambz\Documents\Ingram2026_EEGfMRIGradientHeating
+  Config file(s): []
+  Config MD5: 99914b932bd37a50b983c5e7c90ae93b
+
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count
+-----------  -------
+analysis_3T        1
+analysis_7T        1
+all                1
+total              3
+
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Oct 14 14:15:12 2026]
+localrule analysis_7T:
+    input: code/01_7T_analysis.py, data/7T_temperature_recordings/7T_heating_slew_rates.csv
+    output: figures/figure_03.svg, figures/figure_03.png
+    jobid: 1
+    reason: Missing output files: figures/figure_03.svg, figures/figure_03.png
+    resources: tmpdir=C:\Users\ingrambz\AppData\Local\Temp
+Select jobs to execute...
+[Wed Oct 14 14:15:14 2026]
+Finished jobid: 1 (Rule: analysis_7T)
+1 of 3 steps (33%) done
+Execute 1 jobs...
+[Wed Oct 14 14:15:14 2026]
+localrule analysis_3T:
+    input: code/02_3T_analysis.py, data/3T_temperature_recordings/100625_config1_10cm_1p5mmEPI.txt, data/3T_temperature_recordings/100625_config1_10cm_1p5mmEPI_150s.txt, data/3T_temperature_recordings/100625_config1_10cm_2p5mmEPI_normal_150s.txt, data/3T_temperature_recordings/100625_config1_10cm_2p5mmEPI_performance_150s.txt, data/3T_temperature_recordings/100625_config1_10cm_baseline.txt, data/3T_temperature_recordings/100625_config1_10cm_shortest_1p5mmEPI_75s.txt, data/3T_temperature_recordings/100625_config1_10cm_shortest_2p5mmEPI_normal_75s.txt, data/3T_temperature_recordings/100625_config1_10cm_shortest_2p5mmEPI_performance_75s.txt, data/3T_temperature_recordings/100625_config1_30cm_1p5mmEPI.txt, data/3T_temperature_recordings/100625_config1_30cm_1p5mmEPI_20min.txt, data/3T_temperature_recordings/100625_config1_30cm_2p5mmEPI_performance.txt, data/3T_temperature_recordings/100625_config1_30cm_baseline.txt, data/3T_temperature_recordings/100625_config1_30cm_localiser.txt, data/3T_temperature_recordings/100625_config2_30cm_1p5mmEPI_20min.txt, data/3T_temperature_recordings/100625_config2_30cm_baseline.txt, data/3T_temperature_recordings/100625_config3_10cm_shortest_1p5mmEPI_75s.txt, data/3T_temperature_recordings/100625_config3_10cm_shortest_2p5mmEPI_normal_75s.txt, data/3T_temperature_recordings/100625_config3_10cm_shortest_2p5mmEPI_performance_75s.txt
+    output: figures/figure_04.svg, figures/figure_04.png, figures/figure_05.svg, figures/figure_05.png, figures/figure_06.svg, figures/figure_06.png, figures/figure_07.svg, figures/figure_07.png, figures/figure_08.svg, figures/figure_08.png, results/figure_04_metrics.csv, results/figure_05_metrics.csv, results/figure_06_metrics.csv, results/figure_07_metrics.csv, results/figure_08_metrics.csv
+    jobid: 2
+    reason: Missing output files: figures/figure_04.png, figures/figure_05.png, figures/figure_04.svg, figures/figure_07.png, figures/figure_06.png, figures/figure_08.svg, figures/figure_06.svg, figures/figure_07.svg, figures/figure_05.svg, figures/figure_08.png
+    resources: tmpdir=C:\Users\ingrambz\AppData\Local\Temp
+[Wed Oct 14 14:15:19 2026]
+Finished jobid: 2 (Rule: analysis_3T)
+2 of 3 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Oct 14 14:15:19 2026]
+localrule all:
+    input: figures/figure_03.svg, figures/figure_03.png, figures/figure_04.svg, figures/figure_04.png, figures/figure_05.svg, figures/figure_05.png, figures/figure_06.svg, figures/figure_06.png, figures/figure_07.svg, figures/figure_07.png, figures/figure_08.svg, figures/figure_08.png, results/figure_04_metrics.csv, results/figure_05_metrics.csv, results/figure_06_metrics.csv, results/figure_07_metrics.csv, results/figure_08_metrics.csv
+    jobid: 0
+    reason: Input files updated by another job: figures/figure_03.png, figures/figure_04.png, results/figure_05_metrics.csv, figures/figure_07.png, figures/figure_03.svg, figures/figure_08.svg, figures/figure_07.svg, results/figure_07_metrics.csv, results/figure_04_metrics.csv, results/figure_08_metrics.csv, figures/figure_05.png, figures/figure_04.svg, results/figure_06_metrics.csv, figures/figure_06.png, figures/figure_06.svg, figures/figure_05.svg, figures/figure_08.png
+    resources: tmpdir=C:\Users\ingrambz\AppData\Local\Temp
+[Wed Oct 14 14:15:19 2026]
+Finished jobid: 0 (Rule: all)
+3 of 3 steps (100%) done
+Complete log(s): C:\Users\ingrambz\Documents\Ingram2026_EEGfMRIGradientHeating\.snakemake\log\2026-10-14T141511.990785.snakemake.log
+Elapsed time: 0:00:07.973093

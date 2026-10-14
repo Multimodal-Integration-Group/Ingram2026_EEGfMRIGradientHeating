@@ -1,0 +1,25 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-10-14 14:13:38
+  Workflow ID: 218d1f8e-c6a0-42cc-b724-496d7ab8e142
+  Platform: Windows-10-10.0.26200-SP0
+  Host: UOB232709
+  User: ingrambz
+  Snakemake version: 9.27.0
+  Python version: 3.11.13 (main, Sep 18 2025, 19:43:06) [MSC v.1944 64 bit (AMD64)]
+  Command: C:\Users\ingrambz\AppData\Local\uv\cache\archive-v0\mNIe3NwZOf2ng61ag023Y\Scripts\snakemake --cores 1
+  Snakefile: C:\Users\ingrambz\Documents\Ingram2026_EEGfMRIGradientHeating\Snakefile
+  Base directory: C:\Users\ingrambz\Documents\Ingram2026_EEGfMRIGradientHeating
+  Run directory: C:\Users\ingrambz\Documents\Ingram2026_EEGfMRIGradientHeating
+  Working directory: C:\Users\ingrambz\Documents\Ingram2026_EEGfMRIGradientHeating
+  Config file(s): []
+  Config MD5: 99914b932bd37a50b983c5e7c90ae93b
+
+Building DAG of jobs...
+MissingInputException in rule analysis_7T in file "C:\Users\ingrambz\Documents\Ingram2026_EEGfMRIGradientHeating\Snakefile", line 15:
+Missing input files for rule analysis_7T:
+    output: figures/figure_03.svg, figures/figure_03.png
+    affected files:
+        scripts/01_7T_analysis.py
