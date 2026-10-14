@@ -4,7 +4,7 @@ This repository contains the code and data needed to reproduce the heating resul
 
 ## Reproducing the results
 
-All results and figures can be regenerated with a single command:
+All results and figures can be regenerated with the following command:
 
 ```bash
 uvx snakemake --cores 1
