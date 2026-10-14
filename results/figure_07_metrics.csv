@@ -1,0 +1,9 @@
+figure,sequence,file,probe,max_temp_c,slope_c_per_min
+figure_07,1.5mm (GM: Performance),100625_config1_30cm_1p5mmEPI.txt,Probe_1,,
+figure_07,1.5mm (GM: Performance),100625_config1_30cm_1p5mmEPI.txt,Probe_2,,
+figure_07,1.5mm (GM: Performance),100625_config1_30cm_1p5mmEPI.txt,Probe_3,,
+figure_07,1.5mm (GM: Performance),100625_config1_30cm_1p5mmEPI.txt,Probe_4,,
+figure_07,2.5mm (GM: Performance),100625_config1_30cm_2p5mmEPI_performance.txt,Probe_1,,
+figure_07,2.5mm (GM: Performance),100625_config1_30cm_2p5mmEPI_performance.txt,Probe_2,,
+figure_07,2.5mm (GM: Performance),100625_config1_30cm_2p5mmEPI_performance.txt,Probe_3,,
+figure_07,2.5mm (GM: Performance),100625_config1_30cm_2p5mmEPI_performance.txt,Probe_4,,

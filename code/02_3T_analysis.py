@@ -1,7 +1,7 @@
 # /// script
 # requires-python = ">=3.11"
 # dependencies = [
-#     "arviz",
+#     "arviz<1",
 #     "matplotlib",
 #     "numpy",
 #     "pandas",
@@ -314,6 +314,7 @@ def plot_multiple_temperature_files(
         axes = [axes]
 
     dfs = []
+    results_rows = []
 
     if shared_legend:
         all_handles, all_labels = [], []
@@ -324,12 +325,24 @@ def plot_multiple_temperature_files(
         shift = epi_start - baseline_points
         cooling = timing_info["cooling_times"][i] + epi_end - shift
 
-        df, _metrics, metadata, epi_start_shifted, epi_end_shifted = (
+        df, metrics, metadata, epi_start_shifted, epi_end_shifted = (
             process_temperature_file(
                 file, epi_start, epi_end, baseline_points, probes, baseline_sds
             )
         )
         dfs.append(df)
+
+        for probe, values in metrics.items():
+            results_rows.append(
+                {
+                    "figure": figure_name,
+                    "sequence": plot_titles[i],
+                    "file": Path(file).name,
+                    "probe": probe,
+                    "max_temp_c": values["max_temp"],
+                    "slope_c_per_min": values["slope_c_per_min"],
+                }
+            )
 
         ax = axes[i]
         plot_temperature(
@@ -387,6 +400,12 @@ def plot_multiple_temperature_files(
 
     fig.savefig(root / "figures" / f"{figure_name}.svg", bbox_inches="tight")
     fig.savefig(root / "figures" / f"{figure_name}.png", bbox_inches="tight")
+
+    results_dir = root / "results"
+    results_dir.mkdir(exist_ok=True)
+    pd.DataFrame(results_rows).to_csv(
+        results_dir / f"{figure_name}_metrics.csv", index=False
+    )
 
     return dfs
 

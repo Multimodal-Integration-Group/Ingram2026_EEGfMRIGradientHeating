@@ -1,0 +1,13 @@
+figure,sequence,file,probe,max_temp_c,slope_c_per_min
+figure_04,1.5mm (GM: Performance),100625_config3_10cm_shortest_1p5mmEPI_75s.txt,Probe_1,2.712,1.7590692755156003
+figure_04,1.5mm (GM: Performance),100625_config3_10cm_shortest_1p5mmEPI_75s.txt,Probe_2,2.1234545454545453,0.8400317292437864
+figure_04,1.5mm (GM: Performance),100625_config3_10cm_shortest_1p5mmEPI_75s.txt,Probe_3,,
+figure_04,1.5mm (GM: Performance),100625_config3_10cm_shortest_1p5mmEPI_75s.txt,Probe_4,2.938363636363634,1.6352934955050245
+figure_04,2.5mm (GM: Performance),100625_config3_10cm_shortest_2p5mmEPI_performance_75s.txt,Probe_1,1.6132727272727245,0.948640930724483
+figure_04,2.5mm (GM: Performance),100625_config3_10cm_shortest_2p5mmEPI_performance_75s.txt,Probe_2,1.0720000000000056,0.5004336329984147
+figure_04,2.5mm (GM: Performance),100625_config3_10cm_shortest_2p5mmEPI_performance_75s.txt,Probe_3,,
+figure_04,2.5mm (GM: Performance),100625_config3_10cm_shortest_2p5mmEPI_performance_75s.txt,Probe_4,1.6985454545454564,0.9759915388683248
+figure_04,2.5mm (GM: Normal),100625_config3_10cm_shortest_2p5mmEPI_normal_75s.txt,Probe_1,1.4638181818181792,0.9486726599682718
+figure_04,2.5mm (GM: Normal),100625_config3_10cm_shortest_2p5mmEPI_normal_75s.txt,Probe_2,0.9827272727272703,0.3477842411422526
+figure_04,2.5mm (GM: Normal),100625_config3_10cm_shortest_2p5mmEPI_normal_75s.txt,Probe_3,,
+figure_04,2.5mm (GM: Normal),100625_config3_10cm_shortest_2p5mmEPI_normal_75s.txt,Probe_4,1.528909090909092,1.0901533580116327
